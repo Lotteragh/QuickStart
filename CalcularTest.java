@@ -1,7 +1,0 @@
-/**
- * CalcularTest
- */
-public class CalculaterTest {
-
-    
-}
