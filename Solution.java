@@ -26,9 +26,9 @@ public class Solution {
         int[] baseArray = {1,2,3,4,5,6};
         solution.solution(baseArray, 8);
 
-        System.out.println("Number of joumps is 3 " + (solution.solution(10, 85, 30)==3) );
-        System.out.println("Number of joumps is 15 " + (solution.solution(10, 85, 5)==15) );
-        System.out.println("Number of joumps is 1 " + (solution.solution(10, 25, 20)==1) );
+        System.out.println("Number of jumps is 3 " + (solution.solution(10, 85, 30)==3) );
+        System.out.println("Number of jumps is 15 " + (solution.solution(10, 85, 5)==15) );
+        System.out.println("Number of jumps is 1 " + (solution.solution(10, 25, 20)==1) );
 
 
         //PermMissingElement
@@ -37,7 +37,7 @@ public class Solution {
         System.out.println("Missing int is 3 " + (solution.solution1(permMissingElementA)==3));
         System.out.println("Missing int is 6 " + (solution.solution1(permMissingElementB)==6));
 
-        //TapeEquiibrium
+        //TapeEquilbrium
         
     }
 
