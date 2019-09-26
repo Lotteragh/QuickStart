@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import javax.lang.model.util.ElementScanner6;
+
 /**
  * Solution
  */
@@ -23,6 +25,12 @@ public class Solution {
         System.out.println("Solution is " + solution.solution(B));
         System.out.println("Solution is " + solution.solution(C));
 
+        int[] baseArray = {1,2,3,4,5,6};
+        solution.solution(baseArray, 8);
+
+        System.out.println("Number of joumps is 3 " + (solution.solution(10, 85, 30)==3) );
+        System.out.println("Number of joumps is 15 " + (solution.solution(10, 85, 5)==15) );
+        System.out.println("Number of joumps is 1 " + (solution.solution(10, 25, 20)==1) );
     }
 
     public int solution(int n) {
@@ -88,4 +96,20 @@ public class Solution {
 
     }
 
+    public int[] solution(int[] A, int K) {
+        int[] B = new int[A.length];
+        for(int index = 0 ; index < A.length; index++){
+            int rotatedIndex = (index + K)%A.length;
+            System.out.println("length: " + A.length + " index: " + index + " rotatedIndex : " + rotatedIndex);
+            B[rotatedIndex] = A[index];
+        }
+        
+        return B;
+
+    }
+
+    public int solution(int X, int Y , int D) {
+
+        return (Y-X)%D==0 ? (Y-X)/D : ((Y-X)/D)+1;
+    }
 }
