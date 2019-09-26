@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,10 +15,7 @@ import javax.lang.model.util.ElementScanner6;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // System.out.println("Solution is " + solution.solution(18));
-        // System.out.println("Solution is " + solution.solution(32));
-        // System.out.println("Solution is " + solution.solution(1041));
-
+        
         int[] A = { 9, 3, 9, 3, 9, 7, 9 };
         int[] B = { 9, 3, 9, 3, 6, 9, 7, 9, 6 };
         int[] C = { 9, 3, 9, 3, 9, 7, 9 ,1,1,7,13,27,27,27,56,43,56,43};
@@ -31,6 +29,16 @@ public class Solution {
         System.out.println("Number of joumps is 3 " + (solution.solution(10, 85, 30)==3) );
         System.out.println("Number of joumps is 15 " + (solution.solution(10, 85, 5)==15) );
         System.out.println("Number of joumps is 1 " + (solution.solution(10, 25, 20)==1) );
+
+
+        //PermMissingElement
+        int[] permMissingElementA= {1,2,4,5};
+        int[] permMissingElementB = {1,2,3,4,5,7};
+        System.out.println("Missing int is 3 " + (solution.solution1(permMissingElementA)==3));
+        System.out.println("Missing int is 6 " + (solution.solution1(permMissingElementB)==6));
+
+        //TapeEquiibrium
+        
     }
 
     public int solution(int n) {
@@ -93,6 +101,23 @@ public class Solution {
         }
 
         return distinctIntegerList.get(0).intValue();
+
+    }
+
+    public int solution1(int[] A) {
+        
+        List<Integer> integerList = new ArrayList<Integer>();
+        for(int i = 0; i < A.length; i++)
+            integerList.add(Integer.valueOf(A[i]));
+        Collections.sort(integerList);
+
+        for (int y = 0 ; y < integerList.size(); y++) {
+            System.out.println("current is " + integerList.get(y).intValue());
+            if(integerList.contains(Integer.valueOf(y+1))==false){
+                return y+1;
+            }
+        }
+        return 0;
 
     }
 
