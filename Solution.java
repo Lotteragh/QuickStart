@@ -37,8 +37,7 @@ public class Solution {
         System.out.println("Missing int is 3 " + (solution.solution1(permMissingElementA)==3));
         System.out.println("Missing int is 6 " + (solution.solution1(permMissingElementB)==6));
 
-        //TapeEquilbrium
-        
+        git
     }
 
     public int solution(int n) {
