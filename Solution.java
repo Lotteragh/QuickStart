@@ -38,20 +38,19 @@ public class Solution {
         System.out.println("Missing int is 6 " + (solution.solution1(permMissingElementB)==6));
 
         //TapeEquilbrium
-
-
-
-        private int getDifference(int[] A , int P) {
-            int sumOne = 0;
-            int sumTwo = 0;
-            for( int i = 0 ; i < P; i++)
-                sumOne += A[i];
-            for( int i = P ; i < A.length; i++)
-                sumTwo += A[i];
-            return unsigned (sumOne-sumTwo);
-
-        }
+     
         
+    }
+
+    private int getDifference(int[] A , int P) {
+        int sumOne = 0;
+        int sumTwo = 0;
+        for( int i = 0 ; i < P; i++)
+            sumOne += A[i];
+        for( int i = P ; i < A.length; i++)
+            sumTwo += A[i];
+        return unsigned (sumOne-sumTwo);
+
     }
 
     public int solution(int n) {
