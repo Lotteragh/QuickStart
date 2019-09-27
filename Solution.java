@@ -38,18 +38,33 @@ public class Solution {
         System.out.println("Missing int is 6 " + (solution.solution1(permMissingElementB)==6));
 
         //TapeEquilbrium
-     
+        int[] te = {3,1,2,4,3, 7, 1, 6,2,7};
+        System.out.println("Miniman Difference" + solution.getMinimalDifference(te));
+        
         
     }
 
-    private int getDifference(int[] A , int P) {
+    public int getMinimalDifference(int[] A){
+        int difference = 100000;
+        int currentDifference = 1000000;
+        for(int i =1; i < A.length-1 ; i++){
+            currentDifference = getDifference(A, i);
+            System.out.println("Current diff " + currentDifference );
+            if(difference > currentDifference)
+                difference = currentDifference;
+        }
+
+        return difference;
+    }
+
+    private int  getDifference(int[] A , int P) {
         int sumOne = 0;
         int sumTwo = 0;
         for( int i = 0 ; i < P; i++)
             sumOne += A[i];
         for( int i = P ; i < A.length; i++)
             sumTwo += A[i];
-        return unsigned (sumOne-sumTwo);
+        return  sumOne-sumTwo > 0 ? sumOne - sumTwo : sumTwo-sumOne;
 
     }
 
