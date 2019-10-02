@@ -1,4 +1,4 @@
-/*
+package com.codility.lessons;/*
     Some comments
 */
 

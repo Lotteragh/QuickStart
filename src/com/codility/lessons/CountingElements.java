@@ -1,7 +1,9 @@
+package com.codility.lessons;
+
 import java.util.ArrayList;
 
 /**
- * CountingElements
+ * com.codility.lessons.CountingElements
  */
 public class CountingElements {
 

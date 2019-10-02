@@ -1,5 +1,7 @@
+package com.codility.lessons;
+
 /**
- * Calculator
+ * com.codility.lessons.Calculator
  */
 public class Calculator {
 

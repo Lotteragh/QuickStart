@@ -1,7 +1,0 @@
-/**
- * DogTest
- */
-public class DogTest {
-
- 
-}

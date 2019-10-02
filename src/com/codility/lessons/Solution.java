@@ -1,16 +1,11 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+package com.codility.lessons;
 
-import javax.lang.model.util.ElementScanner6;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
- * Solution
+ * com.codility.lessons.Solution
  */
 public class Solution {
     public static void main(String[] args) {
@@ -19,9 +14,9 @@ public class Solution {
         int[] A = { 9, 3, 9, 3, 9, 7, 9 };
         int[] B = { 9, 3, 9, 3, 6, 9, 7, 9, 6 };
         int[] C = { 9, 3, 9, 3, 9, 7, 9 ,1,1,7,13,27,27,27,56,43,56,43};
-        System.out.println("Solution is " + solution.solution(A));
-        System.out.println("Solution is " + solution.solution(B));
-        System.out.println("Solution is " + solution.solution(C));
+        System.out.println("com.codility.lessons.Solution is " + solution.solution(A));
+        System.out.println("com.codility.lessons.Solution is " + solution.solution(B));
+        System.out.println("com.codility.lessons.Solution is " + solution.solution(C));
 
         int[] baseArray = {1,2,3,4,5,6};
         solution.solution(baseArray, 8);

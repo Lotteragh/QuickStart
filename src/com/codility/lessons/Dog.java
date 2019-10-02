@@ -1,5 +1,7 @@
+package com.codility.lessons;
+
 /**
- * Dog
+ * com.codility.lessons.Dog
  */
 public class Dog implements Animal {
 

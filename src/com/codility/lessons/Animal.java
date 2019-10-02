@@ -1,5 +1,7 @@
+package com.codility.lessons;
+
 /**
- * Animal
+ * com.codility.lessons.Animal
  */
 public interface Animal {
 

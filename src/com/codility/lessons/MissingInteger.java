@@ -1,8 +1,10 @@
+package com.codility.lessons;
+
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * MissingInteger
+ * com.codility.lessons.MissingInteger
  */
 public class MissingInteger {
 
